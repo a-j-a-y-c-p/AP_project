@@ -1,0 +1,9 @@
+h1{text-align: center; background-color: orange}
+h4{text-align: center;}
+h2{text-align: center; background-color: orange;}
+ div{margin-left: 25%;margin-right: 25%;} 
+div.column{display: inline;}
+div.Personal{font-size: 30px;}
+div.Qualification{font-size: 30px;}
+div.JEE{font-size: 30px;}
+div.Payment{font-size: 30px;}

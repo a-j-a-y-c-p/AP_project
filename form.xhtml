@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>ADMISSION FORM</title>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+
+    <body style="background-color: skyblue;">
+        <h1>ADMISSION FORM</h1>
+        <h4 style="background-color: orange;">
+            <img src="logo.png" alt="logo" height="30px" width="30px"/>
+            INDIAN INSTITUTE OF INFORMATION TECHNOLOGY NAGPUR (IIITN)
+        </h4>
+        <div class="row" style="margin-left: 0%; margin-right: 0%;">
+            <div class="column" style="margin-left: 0%; margin-right: 0%;">
+                <img src="clg.jpg" alt="image1" height="350px" width="500px"/>
+            </div>
+            <div class="column" style="margin-left: 0%; margin-right: 0%;">
+                <img src="start.jpeg" alt="image2" height="350px" width="495px"/>
+            </div>
+            <div class="column" style="margin-left: 0%; margin-right: 0%;">
+                <img src="director_sir.jpg" alt="image3" height="350px" width="500px"/>
+            </div>
+        </div>
+        <form>
+            <h2>PERSONAL DETAILS</h2>
+            <div class="Personal">
+                <leber for="fname">Student Name</leber>
+                <input type="text" id="name" name="StudentName" placeholder="name of the student"/><br/><br/>
+
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" name="branch" placeholder="branch alloted to you"/><br/><br/>
+
+                <label for="birthday">Date Of Birth</label>
+                <input type="date" id="bday" name="bday"/><br/><br/>
+
+                <label for="gender">Gender :</label><br/>
+                <input type="radio" id="M" name="Gender" />
+                <label for="Male">Male</label><br/>
+                <input type="radio" id="F" name="Gender" />
+                <label for="FEMALE">Female</label><br/>
+                <input type="radio" id="N" name="Gender" />
+                <label for="None">Prefer Not To Say</label><br/><br/>
+
+                <label for="catagory">Catagory :</label><br/>
+                <input type="radio" id="GEN" name="catagory"/>
+                <label for="GEN">GEN</label><br/>
+                <input type="radio" id="OBC" name="catagory"/>
+                <label for="OBC">OBC</label><br/>
+                <input type="radio" id="SC" name="catagory"/>
+                <label for="SC">SC</label><br/>
+                <input type="radio" id="ST" name="catagory"/>
+                <label for="ST">ST</label><br/><br/>
+
+                <label for="Country">Nationality :</label><br/>
+                <input type="radio" id="Indian" name="Nation" />
+                <label for="Indian">Indian</label><br/>
+                <input type="radio" id="Non-Indian" name="Nation" />
+                <label for="Non-Indian">Non-Indian</label><br/><br/>
+
+                <label for="State">State</label>
+                <input type="text" id="State" name="State" placeholder="Rajasthan"/><br/><br/>
+                
+
+                <label for="City">City</label>
+                <input type="text" id="City" name="City" placeholder="Nagpur"/><br/><br/>
+
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="Address"/>
+            </div>
+        
+            <h2>QUALIFICATION DETAILS</h2>
+            <div class="Qualification">
+                
+                <h3>10 DETAILS</h3>
+                <label for="school">Name Of Board</label>
+                <input type="text" id="Bname" name="Bname"/><br/><br/>
+                <label for="school">Name Of School</label>
+                <input type="text" id="Sname" name="Sname"/><br/><br/>
+                <label for="PassYear">Year Of Passing</label>
+                <select id="YOP" name="YOP" >
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select><br/><br/>
+                <label for="MaxMarks">Marks</label>
+                <input type="number" id="M" name="M" placeholder="90" maxlength="3"/><br/><br/>
+                <label for="MaxMarks">Max. Marks</label>
+                <input type="number" id="MM" name="MM" placeholder="100" maxlength="3"/>
+
+
+                <h3>10+2 DETAILS</h3>
+                <label for="school">Name Of Board</label>
+                <input type="text" id="Bname" name="Bname"/><br/><br/>
+                <label for="school">Name Of School</label>
+                <input type="text" id="Sname" name="Sname"/><br/><br/>
+                <label for="PassYear">Year Of Passing</label>
+                <select id="YOP" name="YOP" >
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select><br/><br/>
+                <label for="MaxMarks">Marks</label>
+                <input type="number" id="M" name="M" placeholder="90" maxlength="3"/><br/><br/>
+                <label for="MaxMarks">Max. Marks</label>
+                <input type="number" id="MM" name="MM" placeholder="100" maxlength="3"/>
+            </div>
+        
+        
+        
+            <h2>JEE DETAILS</h2>
+            <div class="JEE">
+                
+                <label for="Roll Number">Roll Number</label>
+                <input type="number" id="rollnumber" name="rollNo." placeholder="1234567890" maxlength="10" /><br/><br/>
+                <label for="JEE percentile">JEE Percentile</label>
+                <input type="number" id="score" name="score" placeholder="99.99" max="100" min="0" step="0.01"/>
+            </div>
+        
+            <h2>PAYMENT DETAILS</h2>
+            <div class="Payment">
+                
+                <label for="HolderName">Account Holder Name</label>
+                <input type="text" id="Hname" name="Hname"/><br/><br/>
+                <label for="AccountNumber">Account Number</label>
+                <input type="number" id="Account" name="Account" placeholder="0123456789" minlength="9" maxlength="18"/><br/><br/>
+                <label for="PayDate">Date Of Payment</label>
+                <input type="date" id="Pdate" name="Pdate"/><br/><br/>
+                <label for="PayedFees">Fees Payed</label>
+                <input type="number" id="Fees" name="Fees" min="0" />
+            </div>
+                
+
+        </form>
+    </body>
+</html>
